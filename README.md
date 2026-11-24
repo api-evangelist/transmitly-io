@@ -74,8 +74,6 @@ Everything profiled for Transmitly.io is published on APIs.io rather than in thi
 
 ### APIs (28)
 
-- [Transmitly.io Admin API](https://apis.io/apis/transmitly-io/transmitly-io-admin-api/) — The Admin API from Transmitly.io — 2 operation(s) for admin.
-- [Transmitly.io Assets API](https://apis.io/apis/transmitly-io/transmitly-io-assets-api/) — The Assets API from Transmitly.io — 2 operation(s) for assets.
 - [Transmitly.io Audiences API](https://apis.io/apis/transmitly-io/transmitly-io-audiences-api/) — The Audiences API from Transmitly.io — 2 operation(s) for audiences.
 - [Transmitly.io Automations API](https://apis.io/apis/transmitly-io/transmitly-io-automations-api/) — The Automations API from Transmitly.io — 4 operation(s) for automations.
 - [Transmitly.io Broadcasts API](https://apis.io/apis/transmitly-io/transmitly-io-broadcasts-api/) — The Broadcasts API from Transmitly.io — 5 operation(s) for broadcasts.
@@ -102,6 +100,8 @@ Everything profiled for Transmitly.io is published on APIs.io rather than in thi
 - [Transmitly.io Test Mode API](https://apis.io/apis/transmitly-io/transmitly-io-test-mode-api/) — The Test Mode API from Transmitly.io — 3 operation(s) for test mode.
 - [Transmitly.io Usage API](https://apis.io/apis/transmitly-io/transmitly-io-usage-api/) — The Usage API from Transmitly.io — 1 operation(s) for usage.
 - [Transmitly.io Webhooks API](https://apis.io/apis/transmitly-io/transmitly-io-webhooks-api/) — The Webhooks API from Transmitly.io — 6 operation(s) for webhooks.
+- [Transmitly.io Admin API](https://apis.io/apis/transmitly-io/transmitly-io-admin-api/) — The Admin API from Transmitly.io — 2 operation(s) for admin.
+- [Transmitly.io Assets API](https://apis.io/apis/transmitly-io/transmitly-io-assets-api/) — The Assets API from Transmitly.io — 2 operation(s) for assets.
 
 ### Published properties
 
@@ -119,16 +119,36 @@ Which operations an agent can call, which act, and which need a human in the loo
 
 - [Transmitly.io Agentic Access](https://apis.io/agentic-access/transmitly-io/transmitly-io-agentic-access/)
 
-#### JSON Schema (6)
+#### JSON Schema (30)
 
 The data models the API reads and writes.
 
+- [Audience](https://apis.io/schemas/transmitly-io/transmitly-io-audience/)
+- [AudienceInput](https://apis.io/schemas/transmitly-io/transmitly-io-audience-input/)
+- [AudienceUpdate](https://apis.io/schemas/transmitly-io/transmitly-io-audience-update/)
+- [AutomationInput](https://apis.io/schemas/transmitly-io/transmitly-io-automation-input/)
 - [Broadcast](https://apis.io/schemas/transmitly-io/transmitly-io-broadcast/)
 - [BroadcastAnalytics](https://apis.io/schemas/transmitly-io/transmitly-io-broadcast-analytics/)
 - [BroadcastInput](https://apis.io/schemas/transmitly-io/transmitly-io-broadcast-input/)
+- [ConsentEvent](https://apis.io/schemas/transmitly-io/transmitly-io-consent-event/)
+- [ContactInput](https://apis.io/schemas/transmitly-io/transmitly-io-contact-input/)
+- [ContactStats](https://apis.io/schemas/transmitly-io/transmitly-io-contact-stats/)
 - [DedicatedAssignment](https://apis.io/schemas/transmitly-io/transmitly-io-dedicated-assignment/)
+- [DeliverabilityAudit](https://apis.io/schemas/transmitly-io/transmitly-io-deliverability-audit/)
+- [Delivery](https://apis.io/schemas/transmitly-io/transmitly-io-delivery/)
+- [DMARCSummary](https://apis.io/schemas/transmitly-io/transmitly-io-dmarcsummary/)
+- [DomainAudit](https://apis.io/schemas/transmitly-io/transmitly-io-domain-audit/)
 - [EmailRequest](https://apis.io/schemas/transmitly-io/transmitly-io-email-request/)
+- [InboundRoute](https://apis.io/schemas/transmitly-io/transmitly-io-inbound-route/)
+- [InboundRouteInput](https://apis.io/schemas/transmitly-io/transmitly-io-inbound-route-input/)
 - [InboxMessage](https://apis.io/schemas/transmitly-io/transmitly-io-inbox-message/)
+- [Notification](https://apis.io/schemas/transmitly-io/transmitly-io-notification/)
+- [PreferenceUpdate](https://apis.io/schemas/transmitly-io/transmitly-io-preference-update/)
+- [SavedBlock](https://apis.io/schemas/transmitly-io/transmitly-io-saved-block/)
+- [Segment](https://apis.io/schemas/transmitly-io/transmitly-io-segment/)
+- [SegmentInput](https://apis.io/schemas/transmitly-io/transmitly-io-segment-input/)
+- [Template](https://apis.io/schemas/transmitly-io/transmitly-io-template/)
+- …and 5 more published on APIs.io
 
 #### JSON-LD (1)
 
@@ -176,23 +196,23 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 66.5** — exemplar · rubric 0.28.0 · scored 2026-11-24
+**Kin Score 65.1** — strong · rubric 0.28.0 · scored 2026-11-24
 
 | Facet | Score |
 |---|---|
 | Discoverability | 75.0 |
-| Contract quality | 63.7 |
-| Contract governance | 79.1 |
+| Contract quality | 66.8 |
+| Contract governance | 22.0 |
 | Operational transparency | 35.7 |
-| Developer ergonomics | 64.3 |
-| Access clarity | 65.5 |
+| Developer ergonomics | 85.0 |
+| Access clarity | 68.1 |
 
-**Agent readiness 42.8** — agent-ready (gated down from agent-native)
+**Agent readiness 42.1** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | unknown |
+| Agentic Access | derived (partial credit) |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | bearer (partial credit) |
@@ -200,8 +220,8 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Error Semantics | derived (partial credit) |
 | OpenAPI Examples | partial |
 | Rate Limit Signal | — |
-| Event Surface Described | unknown |
-| Agent Skills | — |
+| Event Surface Described | yes |
+| Agent Skills | unknown |
 | Well Known Catalog | — |
 | Consent Identity | — |
 | Agent Card | — |
